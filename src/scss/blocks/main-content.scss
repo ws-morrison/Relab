@@ -1,0 +1,37 @@
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  &__title {
+    @include indent-reset;
+    @include h3;
+    color: $ui-500;
+    margin-bottom: 18px;
+  }
+
+  &__text {
+    @include indent-reset;
+    @include text-body;
+    color: $ui-400;
+    line-height: 32px;
+    margin-bottom: 32px;
+  }
+  &__list {
+    @include list-reset;
+  }
+  &__list-item {
+    @include indent-reset;
+    @include text-list;
+    color: $ui-400;
+    // line-height: 24px;
+    margin-bottom: 18px;
+  }
+
+  &__col-1 {
+    display: flex;
+    flex-direction: column;
+    width: 54%;
+    // max-width: 777px;
+    padding-left: 60px;
+  }
+}

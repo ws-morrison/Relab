@@ -1,0 +1,17 @@
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/normalize.scss";
+@import "common.scss";
+
+// __b
+@import "blocks/page-header.scss";
+@import "blocks/burger.scss";
+@import "blocks/header-menu.scss";
+@import "blocks/sub-menu.scss";
+@import "blocks/page-title.scss";
+@import "blocks/nav.scss";
+@import "blocks/login.scss";
+@import "blocks/main-content.scss";
+@import "blocks/aside-news.scss";
+@import "blocks/more-link.scss";

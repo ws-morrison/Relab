@@ -1,0 +1,13 @@
+.page-header {
+  background-color: $accient-300;
+  &__row-1 {
+    max-width: 1120px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    margin-bottom: 30px;
+  }
+}

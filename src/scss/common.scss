@@ -1,0 +1,30 @@
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+  @media (max-width: $smDesktopWidth) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.wrapper {
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Rubik", Helvetica, sans-serif;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

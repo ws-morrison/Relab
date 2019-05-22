@@ -1,0 +1,7 @@
+.more-link {
+  @include indent-reset;
+  @include menu-small;
+  text-transform: uppercase;
+  text-align: right;
+  color: $accient-400;
+}

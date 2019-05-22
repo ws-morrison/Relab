@@ -1,0 +1,22 @@
+.login {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  &__btn {
+    @include menu-small;
+    text-transform: uppercase;
+    color: $accient-400;
+    border: 1px solid $ui-200;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 25px;
+    padding-right: 25px;
+    &--accient {
+      color: $white;
+      background-color: $accient-400;
+      border: 1px solid $ui-400;
+    }
+  }
+}

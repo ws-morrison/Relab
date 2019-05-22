@@ -1,0 +1,65 @@
+.burger {
+    width: 18px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.burger-item {
+    height: 0.1em;
+    background: rgb(58, 185, 195);
+    margin-bottom: 4px;
+/*   autoprefixes */
+    transition: 0.3s ease-out;
+}
+
+.open .burger-item:first-child {
+/*   autoprefixes */
+    transform: scale(0);
+}
+
+.burger-item:last-child {
+    margin-bottom: 0;
+}
+
+.open .burger-item:last-child {
+/*   autoprefixes */
+    transform: scale(0);
+}
+
+.open .burger-item--middle {
+/*   autoprefixes */
+    transform: rotate(135deg);
+}
+
+.open .burger-item--middle::before {
+    content: "";
+    position: absolute;
+
+    width: 18px;
+    height: 0.1em;
+    background: rgb(58, 185, 195);
+    margin-bottom: 4px;
+
+/*   autoprefixes */
+    transform: rotate(90deg);
+}
+
+/* MENU */
+
+.menu {
+  width: 0;
+  height: 420px;
+  background-color:#3ab9c3;
+}
+
+.opened-menu {
+  width: 580px;
+  transition: 0.1s linear;
+}
+
+// jq
+// Burger animation
+// $(".burger").click(function() {
+//     $(this).toggleClass("open");
+//     $('.menu').toggleClass("opened-menu");
+// });

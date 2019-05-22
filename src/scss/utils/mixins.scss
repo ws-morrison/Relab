@@ -1,0 +1,60 @@
+@mixin list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin indent-reset {
+  padding: 0;
+  margin: 0;
+}
+
+// Typo Mixins
+@mixin menu-small {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+@mixin menu-big {
+  font-style: 500;
+  font-size: 16px;
+}
+
+@mixin text-body {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+@mixin text-list {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+@mixin text-list {
+  font-weight: normal;
+  font-size: 16px;
+}
+@mixin text-list-small {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+@mixin h2 {
+  font-weight: 500;
+  font-size: 40px;
+}
+
+@mixin h2-mobile {
+  font-weight: 500;
+  font-size: 32px;
+}
+
+@mixin h3 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+@mixin h3-mobile {
+  font-weight: 500;
+  font-size: 18px;
+}

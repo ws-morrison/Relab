@@ -1,0 +1,21 @@
+.nav {
+  display: flex;
+  max-width: 670px;
+  width: 100%;
+  justify-content: space-between;
+  &__list {
+    @include list-reset;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__list-link {
+    @include menu-big;
+    color: $ui-300;
+    text-transform: uppercase;
+    &:active {
+      color: $ui-400;
+    }
+  }
+}
