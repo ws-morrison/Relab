@@ -1,12 +1,16 @@
 .nav {
-  display: flex;
-  max-width: 670px;
-  width: 100%;
-  justify-content: space-between;
+  &__wrapper {
+    @include main-wrapper;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   &__list {
     @include list-reset;
     display: flex;
-    width: 100%;
+    width: 100vw;
+    max-width: 670px;
     justify-content: space-between;
     flex-wrap: wrap;
   }

@@ -1,0 +1,14 @@
+.page-footer {
+  background-color: $accient-500;
+  padding-top: 50px;
+  padding-bottom: 70px;
+
+  &__wrapper {
+    @include main-wrapper;
+
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

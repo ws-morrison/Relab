@@ -1,0 +1,12 @@
+.contacts {
+    margin-top: 28px;
+  &__link {
+    @include menu-small;
+    text-transform: uppercase;
+    color: $white;
+
+    &--accient {
+      color: $accient-300;
+    }
+  }
+}

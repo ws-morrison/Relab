@@ -1,47 +1,36 @@
 .page-title {
   padding-top: 143px;
   margin-bottom: 45px;
-  &__inner {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin-left: 59px;
-  }
+
+  // &__inner {
+  //   display: flex;
+  //   flex-direction: row;
+  //   flex-wrap: wrap;
+  //   justify-content: flex-start;
+  //   margin-left: 59px;
+  //   // @media (max-width: $smDesktopWidth) {
+  //   //   margin: 0 auto;
+  //   // }
+  // }
   &__inner-img {
     position: relative;
     top: 3.5px;
   }
 
-  &__wrapper {
-      max-width: 1120px;
-      width: 100%;
-      margin: 0 auto;
+  &__content-wrapper {
+    @include main-wrapper;
   }
   &__content {
-    // max-width: 1120px;
-    // width: 100%;
-    // margin: 0 auto;
-    width: 100%;
-    max-width: 928px;
-
+    width: 83%;
     background-color: rgba(239, 246, 255, 0.904);
     padding-top: 36px;
-    // padding-bottom: 36px;
-    // padding-right: 59px;
-    // padding-left: 64px;
-
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
-    position: relative;
-    &:after {
-      // content: "";
-      // width: 100%;
-      // height: 36px;
-      // position: absolute;
-      // background-color: $success-500;
-      // opacity: 0.5;
-      // transform: matrix(1, 0, 2, 1, 0, 0);
+
+    @media (max-width: $smDesktopWidth) {
+      width: 100%;
+      border-top-left-radius: unset;
+      border-top-right-radius: unset;
     }
   }
 
@@ -50,11 +39,27 @@
     @include text-body;
     text-transform: uppercase;
     color: $accient-400;
+    margin-left: 59px;
+    @media (max-width: $smDesktopWidth) {
+      @include menu-small;
+    }
+    @media (max-width: $phoneWidth) {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
   }
   &__caption {
     @include indent-reset;
     @include h2;
     text-transform: uppercase;
     color: $accient-500;
+    margin-left: 59px;
+    @media (max-width: $smDesktopWidth) {
+      @include h2-mobile;
+    }
+    @media (max-width: $phoneWidth) {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
   }
 }

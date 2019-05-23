@@ -4,4 +4,14 @@
   text-transform: uppercase;
   text-align: right;
   color: $accient-400;
+  position: relative;
+  &__thumb {
+    position: absolute;
+    top: -6px;
+    right: -30px;
+  }
+}
+
+#more-arrow:hover {
+  fill: red;
 }

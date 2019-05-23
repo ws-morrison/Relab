@@ -7,6 +7,21 @@
   padding-left: 72px;
   border-left: 1px solid $ui-200;
 
+  @media (max-width: $smDesktopWidth) {
+    // margin: 0 auto;
+    // width: 100%;
+    // max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    width: unset;
+    border-left: none;
+    border-top: 1px solid $ui-200;
+    padding-left: unset;
+
+    padding-top: 32px;
+    padding-bottom: 24px;
+  }
+
   &__item {
     display: flex;
     flex-direction: column;

@@ -1,0 +1,12 @@
+.footer-list {
+  @include list-reset;
+  display: flex;
+  max-width: 550px;
+  width: 100%;
+  justify-content: space-between;
+  &__link {
+    @include menu-small;
+    text-transform: uppercase;
+    color: $accient-200;
+  }
+}
