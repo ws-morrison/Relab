@@ -10,5 +10,10 @@
     align-items: baseline;
     justify-content: space-between;
     flex-wrap: wrap;
+    @media (max-width: $tableWidth) {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+    }
   }
 }

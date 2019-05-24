@@ -1,5 +1,5 @@
 .contacts {
-    margin-top: 28px;
+  margin-top: 28px;
   &__link {
     @include menu-small;
     text-transform: uppercase;
@@ -8,5 +8,13 @@
     &--accient {
       color: $accient-300;
     }
+  }
+  @media (max-width: $tableWidth) {
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    // display: flex;
+    // flex-direction: column;
   }
 }

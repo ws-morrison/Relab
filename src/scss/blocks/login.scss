@@ -1,9 +1,14 @@
 .login {
+  max-width: 206px;
+  width: 100%;
   display: flex;
-  width: 200px;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   &__btn {
     @include menu-small;
+    text-align: center;
+    min-width: 88px;
     text-transform: uppercase;
     color: $accient-400;
     border: 1px solid $ui-200;
@@ -16,7 +21,21 @@
     &--accient {
       color: $white;
       background-color: $accient-400;
-      border: 1px solid $ui-400;
+      border: 1px solid transparent;
+    }
+  }
+}
+
+@media (max-width: $smDesktopWidth) {
+  .login {
+    &__btn {
+      min-width: 130px;
+      background-color: $white;
+      border: 1px solid #d7dfea;
+      &--accient {
+        background-color: #1563c1;
+        border: 1px solid transparent;
+      }
     }
   }
 }

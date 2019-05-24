@@ -1,4 +1,4 @@
-.sub-menu {
+.footer-sub {
   @include list-reset;
   display: flex;
   flex-direction: row;
@@ -13,6 +13,7 @@
     align-items: center;
     margin-bottom: 16px;
   }
+
   &__link {
     @include menu-small;
     text-transform: uppercase;
@@ -26,23 +27,6 @@
     min-height: 40px;
     text-align: center;
     border: 2px solid transparent;
-    // &--active {
-    //   border: 2px solid rgba(218, 233, 251, 0.25);
-    //   border-radius: 6px;
-    // }
-    // &:hover {
-    //   border: 2px solid rgba(218, 233, 251, 0.25);
-    //   border-radius: 6px;
-    // }
-
-    @media (max-width: $tableWidth) {
-      margin-bottom: 16px;
-    }
-  }
-}
-
-.page-header__col-1 .sub-menu {
-  &__link {
     &--active {
       border: 2px solid rgba(218, 233, 251, 0.25);
       border-radius: 6px;
@@ -51,14 +35,9 @@
       border: 2px solid rgba(218, 233, 251, 0.25);
       border-radius: 6px;
     }
-  }
-}
 
-// Header Contacts-About
-.page-header__col-2 .sub-menu {
-  align-self: center;
-  &__link {
-    min-height: unset;
-    border-right: 2px solid $accient-400;
+    @media (max-width: $tableWidth) {
+      margin-bottom: 16px;
+    }
   }
 }
