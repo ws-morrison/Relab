@@ -26,16 +26,6 @@
       grid-template-columns: repeat(2, 1fr);
     }
   }
-  // &__list-row {
-  //   display: flex;
-  //   width: 100%;
-  //   justify-content: space-around;
-  // }
-  // &__col {
-  //   display: flex;
-  //   width: 100%;
-  //   justify-content: space-between;
-  // }
   &__list-link {
     @include menu-big;
     color: $ui-300;
@@ -52,18 +42,19 @@
       padding-bottom: 24px;
 
       border-bottom: 1px solid $white;
-      border-right: 1px solid $white;
+      &:nth-child(odd) {
+        border-right: 1px solid $white;
+      }
     }
   }
 }
 
 // @media (max-width: $smDesktopWidth) {
 //   .nav {
-//     max-width: unset;
-//     width: 100%;
-//     &__list {
-//       display: grid;
-//       grid-template-columns: repeat(2, 1fr);
+//     &__list-link {
+//       &:nth-child(2n) {
+//         border-right: 1px solid red;
+//       }
 //     }
 //   }
 // }

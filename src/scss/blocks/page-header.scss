@@ -12,7 +12,7 @@
     align-items: center;
     @media (max-width: $smDesktopWidth) {
       justify-content: center;
-      padding-top: 60px;
+      padding-top: 0;
       padding-bottom: 0;
 
       display: grid;
