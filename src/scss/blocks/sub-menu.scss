@@ -73,6 +73,8 @@
     @media (max-width: $smDesktopWidth) {
       padding-top: 12px;
       padding-bottom: 12px;
+
+      border-radius: unset;     
       border-right: 2px solid transparent;
     }
   }
