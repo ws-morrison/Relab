@@ -1,0 +1,67 @@
+.about-section {
+  @include main-wrapper;
+  //   max-width: $smDesktopWidth;
+  //   width: 100%;
+  display: grid;
+  grid-template-columns: 191px 528px 304px;
+  justify-content: space-between;
+
+  padding-top: 24px;
+  padding-bottom: 48px;
+
+  @media (max-width: $smDesktopWidth) {
+    grid-template-columns: 100%;
+    justify-items: center;
+  }
+
+  &__col-1 {
+    order: 1;
+    @media (max-width: $smDesktopWidth) {
+      padding-left: 20px;
+      padding-right: 20px;
+      order: 0;
+    }
+  }
+  &__col-2 {
+    order: 2;
+    @media (max-width: $smDesktopWidth) {
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-bottom: 24px;
+      order: 0;
+    }
+  }
+  &__col-3 {
+    order: 3;
+    @media (max-width: $smDesktopWidth) {
+      padding-left: 20px;
+      padding-right: 20px;
+      order: 0;
+    }
+  }
+  &__text-item {
+    padding-left: 16px;
+    padding-right: 16px;
+
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    border-radius: 6px;
+    &--accient {
+      background-color: $accient-100;
+    }
+  }
+  &__text {
+    @include text-body;
+    color: $ui-400;
+    line-height: 32px;
+    @media (max-width: $smDesktopWidth) {
+      @include text-list;
+      line-height: 24px;
+    }
+  }
+}
+
+// @media (max-width: $smDesktopWidth) {
+
+// }

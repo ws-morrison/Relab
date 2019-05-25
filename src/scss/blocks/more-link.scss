@@ -5,6 +5,9 @@
   text-align: right;
   color: $accient-400;
   position: relative;
+  &--accient {
+    color: $white;
+  }
   &__thumb {
     position: absolute;
     top: -6px;

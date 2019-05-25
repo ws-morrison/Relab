@@ -11,49 +11,50 @@
 
 <body>
     <header class="page-header">
-        <div class="container">
+        <!-- <div class="container"> -->
 
-            <div class="page-header__wrapper">
-                <div class="page-header__row-1">
-                    <div class="page-header__col-1">
-                        <div class="sub-menu">
-                            <a href="" class="sub-menu__link">Download</a>
-                            <a href="" class="sub-menu__link">Testimonials</a>
-                            <a href="" class="sub-menu__link">Free training</a>
-                        </div>
+        <div class="page-header__wrapper">
+            <div class="page-header__row-1">
+                <div class="page-header__col-1">
+                    <div class="sub-menu">
+                        <a href="" class="sub-menu__link sub-menu__link--hidden">Download</a>
+                        <a href="" class="sub-menu__link">Testimonials</a>
+                        <a href="" class="sub-menu__link">Free training</a>
                     </div>
-                    <div class="page-header__col-2">
-                        <div class="sub-menu">
-                            <a href="" class="sub-menu__link">Contact us</a>
-                            <a href="" class="sub-menu__link">About relab</a>
-                        </div>
+                </div>
+                <div class="page-header__col-2">
+                    <div class="sub-menu">
+                        <a href="" class="sub-menu__link">Contact us</a>
+                        <a href="" class="sub-menu__link">About relab</a>
                     </div>
                 </div>
             </div>
-
         </div>
+
+        <!-- </div> -->
     </header>
 
     <div class="header-menu">
-        <div class="container">
-            <div class="nav__wrapper">
+        <!-- <div class="container"> -->
+        <div class="nav__wrapper">
+            <div class="header-menu__logo-wrapper">
                 <img class="header-menu__logo" src="./img/logo.png" alt="" class="logo" width="106" height="59">
+            </div>
 
-                <ul class="nav__list">
-                    <a href="#" class="nav__list-link">Home</a>
-                    <a href="" class="nav__list-link">Products</a>
-                    <a href="" class="nav__list-link">Services</a>
-                    <a href="" class="nav__list-link">Support</a>
-                    <a href="" class="nav__list-link">Customers</a>
-                    <a href="" class="nav__list-link">Partners</a>
-                </ul>
-
-                <div class="login">
-                    <a href="" class="login__btn">Log in</a>
-                    <a href="" class="login__btn login__btn--accient">Sign up</a>
-                </div>
+            <div class="nav__list">
+                <a href="#" class="nav__list-link">Home</a>
+                <a href="" class="nav__list-link">Products</a>
+                <a href="" class="nav__list-link">Services</a>
+                <a href="" class="nav__list-link">Support</a>
+                <a href="" class="nav__list-link">Customers</a>
+                <a href="" class="nav__list-link">Partners</a>
+            </div>
+            <div class="login">
+                <a href="" class="login__btn">Log in</a>
+                <a href="" class="login__btn login__btn--accient">Sign up</a>
             </div>
         </div>
+        <!-- </div> -->
     </div>
 
 
@@ -90,18 +91,26 @@
                         </p>
                         <h3 class="main-content__title">RELAB BENEFITS</h3>
                         <ul class="main-content__list">
-                            <li class="main-content__list-item">Ease of use and interoperability with the most advanced
+                            <li class="main-content__list-item">
+                                <object class="main-content__list-thumb" type="image/svg+xml" data="./img/icons/li.svg"></object>
+                                Ease of use and interoperability with the most advanced
                                 features
                             </li>
-                            <li class="main-content__list-item">The best automation solution in a broad range of
+                            <li class="main-content__list-item">
+                                <object class="main-content__list-thumb" type="image/svg+xml" data="./img/icons/li.svg"></object>
+                                The best automation solution in a broad range of
                                 industrial
                                 applications</li>
-                            <li class="main-content__list-item">Support that identifies the root cause of problems and
+                            <li class="main-content__list-item">
+                                <object class="main-content__list-thumb" type="image/svg+xml" data="./img/icons/li.svg"></object>
+                                Support that identifies the root cause of problems and
                                 works
                                 with
                                 customer
                                 to resolve</li>
-                            <li class="main-content__list-item">Scalable products that can grow and adapt with no or
+                            <li class="main-content__list-item">
+                                <object class="main-content__list-thumb" type="image/svg+xml" data="./img/icons/li.svg"></object>
+                                Scalable products that can grow and adapt with no or
                                 minimal
                                 cost
                             </li>
@@ -142,7 +151,7 @@
             </div>
         </section>
 
-        <section class="products">
+        <section class="products" style="background-image: url('./img/background-blue.png');background-repeat: no-repeat;">
             <div class="container">
 
                 <div class="products__wrapper">
@@ -179,8 +188,11 @@
                             ReLab solutions have the flexibility to integrate, manage and control a wide range of
                             manufacturing automation technologies.
                         </p>
+                        <a href="" class="more-link more-link--accient">All Products
+                            <object id="more-arrow" class="more-link__thumb" type="image/svg+xml"
+                                data="./img/icons/arrow.svg">→</object>
+                        </a>
                     </div>
-
                 </div>
 
 

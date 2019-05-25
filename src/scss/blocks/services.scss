@@ -1,0 +1,36 @@
+.services {
+  margin-bottom: 24px;
+  &__list {
+    line-height: 24px;
+    margin-bottom: 29px;
+    padding-left: 15px;
+  }
+  &__item {
+    text-transform: uppercase;
+
+    @media (max-width: $smDesktopWidth) {
+      display: none;
+    }
+  }
+  &__item-title {
+    @include menu-small;
+    color: $ui-500;
+  }
+  &__list-item {
+    @include menu-small;
+    color: $ui-400;
+  }
+  &__add-item {
+    display: flex;
+    flex-direction: column;
+  }
+  &__item-link {
+    padding-top: 21px;
+    padding-bottom: 21px;
+    text-align: center;
+    background-color: $accient-100;
+
+    @include text-list-small;
+    color: $accient-400;
+  }
+}

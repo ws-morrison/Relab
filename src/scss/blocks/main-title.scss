@@ -1,0 +1,29 @@
+.main-title {
+  @include main-wrapper;
+  border-bottom: 1px solid $ui-200;
+
+  position: relative;
+
+  &__title {
+    @include h2;
+    @include indent-reset;
+    margin-bottom: 24px;
+    color: $accient-400;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    @media (max-width: $smDesktopWidth) {
+      @include h2-mobile;
+    }
+  }
+
+  &__img-wrapper {
+    align-self: flex-end;
+    position: absolute;
+    bottom: -12px;
+    right: 0;
+    @media (max-width: $smDesktopWidth) {
+      display: none;
+    }
+  }
+}

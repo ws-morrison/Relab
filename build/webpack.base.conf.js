@@ -93,6 +93,11 @@ module.exports = {
             template: `${PATHS.src}/index.html`,
             filename: './index.html'
         }),
+        new HtmlWebpack({
+            hash: false,
+            template: `${PATHS.src}/2.html`,
+            filename: './2.html'
+        }),
         new CopyWebpack([
             { from: `${PATHS.src}/img`, to: `${PATHS.assets}img` },
             { from: `${PATHS.src}/static`, to: '' }

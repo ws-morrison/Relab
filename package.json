@@ -9,7 +9,8 @@
   },
   "browserslist": [
     ">1%",
-    "last 3 version"
+    "last 3 version",
+    "ie 11"
   ],
   "author": "",
   "license": "MIT",

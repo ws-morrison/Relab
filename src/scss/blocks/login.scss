@@ -28,13 +28,32 @@
 
 @media (max-width: $smDesktopWidth) {
   .login {
+    max-width: unset;
+    width: 100%;
+    background-color: $accient-300;
+    justify-content: center;
+
+    padding-top: 24px;
+    padding-bottom: 24px;
     &__btn {
       min-width: 130px;
       background-color: $white;
       border: 1px solid #d7dfea;
       &--accient {
-        background-color: #1563c1;
+        background-color: $accient-400;
         border: 1px solid transparent;
+        margin-left: 48px;
+      }
+    }
+  }
+}
+
+@media (max-width: $smPhoneWidth) {
+  .login {
+    &__btn {
+      min-width: 110px;
+      &--accient {
+        margin-left: unset;
       }
     }
   }

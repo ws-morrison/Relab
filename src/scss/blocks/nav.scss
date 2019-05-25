@@ -4,6 +4,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: $smDesktopWidth) {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+
+      background-color: $accient-400;
+    }
   }
 
   &__list {
@@ -13,6 +20,15 @@
     max-width: 670px;
     justify-content: space-between;
     flex-wrap: wrap;
+    @media (max-width: $smDesktopWidth) {
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+
+      max-width: unset;
+      width: 100%;
+    }
   }
   &__list-link {
     @include menu-big;
@@ -20,6 +36,16 @@
     text-transform: uppercase;
     &:active {
       color: $ui-400;
+    }
+    @media (max-width: $smDesktopWidth) {
+      @include h3-mobile;
+      color: $white;
+      width: 100%;
+      text-align: center;
+      padding-top: 24px;
+      padding-bottom: 24px;
+
+      border-bottom: 1px solid $white;
     }
   }
 }

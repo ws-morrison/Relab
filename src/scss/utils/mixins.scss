@@ -3,7 +3,11 @@
   width: 100%;
   margin: 0 auto;
 }
-
+@mixin mobile-wrapper {
+  max-width: 475px;
+  width: 100%;
+  margin: 0 auto;
+}
 @mixin list-reset {
   list-style: none;
   padding: 0;

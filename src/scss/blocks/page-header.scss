@@ -1,9 +1,7 @@
 .page-header {
   background-color: $accient-300;
   &__wrapper {
-    max-width: 1120px;
-    width: 100%;
-    margin: 0 auto;
+    @include main-wrapper;
   }
   &__row-1 {
     display: flex;
@@ -12,5 +10,28 @@
     padding-bottom: 21px;
     flex-wrap: wrap;
     align-items: center;
+    @media (max-width: $smDesktopWidth) {
+      justify-content: center;
+      padding-top: 60px;
+      padding-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: $smDesktopWidth) {
+  .page-header {
+    &__col-1 {
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    &__col-2 {
+      border-bottom: 1px solid white;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
   }
 }

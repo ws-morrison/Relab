@@ -1,5 +1,6 @@
 .sub-menu {
   @include list-reset;
+
   display: flex;
   flex-direction: row;
 
@@ -7,14 +8,15 @@
   align-items: baseline;
   flex-wrap: wrap;
 
-  @media (max-width: $tableWidth) {
+  @media (max-width: $smDesktopWidth) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 16px;
+    // margin-bottom: 16px;
   }
   &__link {
     @include menu-small;
+
     text-transform: uppercase;
     color: #fff;
 
@@ -23,26 +25,26 @@
     justify-content: center;
     align-items: center;
     min-width: 130px;
-    min-height: 40px;
+    // min-height: 40px;
     text-align: center;
     border: 2px solid transparent;
-    // &--active {
-    //   border: 2px solid rgba(218, 233, 251, 0.25);
-    //   border-radius: 6px;
-    // }
-    // &:hover {
-    //   border: 2px solid rgba(218, 233, 251, 0.25);
-    //   border-radius: 6px;
-    // }
-
-    @media (max-width: $tableWidth) {
-      margin-bottom: 16px;
+    @media (max-width: $smDesktopWidth) {
+      // margin-bottom: 16px;
+      min-height: unset;
+    }
+    &--hidden {
+      @media (max-width: $smDesktopWidth) {
+        display: none;
+      }
     }
   }
 }
 
 .page-header__col-1 .sub-menu {
   &__link {
+    padding-top: 12px;
+    padding-bottom: 12px;
+
     &--active {
       border: 2px solid rgba(218, 233, 251, 0.25);
       border-radius: 6px;
@@ -52,13 +54,26 @@
       border-radius: 6px;
     }
   }
+  @media (max-width: $smDesktopWidth) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 // Header Contacts-About
 .page-header__col-2 .sub-menu {
   align-self: center;
+  @media (max-width: $smDesktopWidth) {
+    display: flex;
+    flex-direction: row;
+  }
   &__link {
     min-height: unset;
     border-right: 2px solid $accient-400;
+    @media (max-width: $smDesktopWidth) {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      border-right: 2px solid transparent;
+    }
   }
 }

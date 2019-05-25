@@ -1,0 +1,42 @@
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  &__link {
+    @include menu-small;
+    text-transform: uppercase;
+    color: $accient-400;
+
+    min-width: 150px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    border: 2px solid $accient-200;
+    border-radius: 6px;
+
+    &--accient {
+      background-color: $accient-500;
+      color: $white;
+      border: 2px solid transparent;
+    }
+  }
+}
+
+@media (max-width: $smDesktopWidth) {
+  .btn-group {
+    margin-bottom: 40px;
+
+    display: flex;
+    margin: 0 auto;
+    max-width: 329px;
+    width: 100%;
+    &__link {
+      margin-bottom: 24px;
+      flex-wrap: nowrap;
+      &--wide {
+        width: 100%;
+      }
+    }
+  }
+}

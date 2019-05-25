@@ -1,0 +1,14 @@
+.breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  max-width: 740px;
+  width: 100%;
+
+  margin-bottom: 12px;
+
+  &__link {
+    @include menu-small;
+    color: $ui-300;
+    text-transform: uppercase;
+  }
+}

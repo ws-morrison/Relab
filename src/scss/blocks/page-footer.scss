@@ -10,10 +10,29 @@
     align-items: baseline;
     justify-content: space-between;
     flex-wrap: wrap;
-    @media (max-width: $tableWidth) {
-      display: block;
+    @media (max-width: $smDesktopWidth) {
+      // display: block;
       width: 100%;
       margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
     }
+  }
+}
+
+.page-footer__wrapper .btn-group {
+  &__link {
+    border: 2px solid transparent;
+    color: $white;
+    &--accient {
+      border: 2px solid $accient-400;
+    }
+  }
+  @media (max-width: $smDesktopWidth) {
+    max-width: 150px;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
