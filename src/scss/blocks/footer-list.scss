@@ -26,5 +26,8 @@
     &:last-child {
       border-right: none;
     }
+    &:hover {
+      color: $white;
+    }
   }
 }

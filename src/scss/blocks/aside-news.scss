@@ -27,11 +27,17 @@
     flex-direction: column;
     margin-bottom: 28px;
     width: 75%;
+    &:hover {
+      color: $accient-500;
+    }
   }
   &__item-title {
     @include text-list;
     color: $accient-400;
     margin-bottom: 10px;
+    &:hover {
+      color: $accient-500;
+    }
   }
   &__item-date {
     @include menu-small;

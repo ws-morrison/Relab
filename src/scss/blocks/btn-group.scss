@@ -15,10 +15,17 @@
     border: 2px solid $accient-200;
     border-radius: 6px;
 
+    &:hover {
+      color: $accient-500;
+    }
+
     &--accient {
       background-color: $accient-500;
       color: $white;
       border: 2px solid transparent;
+      &:hover {
+        color: $accient-200;
+      }
     }
   }
 }

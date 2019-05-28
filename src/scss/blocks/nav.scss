@@ -30,7 +30,7 @@
     @include menu-big;
     color: $ui-300;
     text-transform: uppercase;
-    &:active {
+    &:hover {
       color: $ui-400;
     }
     @media (max-width: $smDesktopWidth) {

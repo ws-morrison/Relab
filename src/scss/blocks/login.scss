@@ -18,10 +18,16 @@
     padding-bottom: 13px;
     padding-left: 25px;
     padding-right: 25px;
+    &:hover {
+      background-color: $accient-100;
+    }
     &--accient {
       color: $white;
       background-color: $accient-400;
       border: 1px solid transparent;
+      &:hover {
+        background-color: $accient-500;
+      }
     }
   }
 }

@@ -26,8 +26,22 @@
     align-items: center;
     min-width: 130px;
     text-align: center;
+    border: 2px solid transparent;
+    &:hover {
+      color: $accient-200;
+    }
+
     @media (max-width: $smDesktopWidth) {
       min-height: unset;
+    }
+    &--accient {
+      border: 2px solid rgba(218, 233, 251, 0.25);
+      border-radius: 6px;
+      &:hover {
+        background-color: $accient-400;
+        border: 2px solid $accient-400;
+        color: $white;
+      }
     }
     &--hidden {
       @media (max-width: $smDesktopWidth) {
@@ -51,7 +65,6 @@
     //   border-radius: 6px;
     // }
     @media (max-width: $smDesktopWidth) {
-
       &:nth-child(even) {
         border-right: 1px solid $white;
       }
