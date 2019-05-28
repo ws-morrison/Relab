@@ -13,6 +13,14 @@
     flex-direction: column;
     align-items: center;
     // margin-bottom: 16px;
+    width: unset;
+  }
+  &__thumb {
+    position: relative;
+    left: -8px;
+    @media (max-width: $smDesktopWidth) {
+      display: none;
+    }
   }
   &__link {
     @include menu-small;
@@ -27,6 +35,8 @@
     min-width: 130px;
     text-align: center;
     border: 2px solid transparent;
+
+    position: relative;
     &:hover {
       color: $accient-200;
     }
@@ -52,9 +62,13 @@
 }
 
 .page-header__col-1 .sub-menu {
+  width: 450px;
+  @media (max-width: $smDesktopWidth) {
+    width: unset;
+  }
   &__link {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 7px;
+    padding-bottom: 7px;
 
     &--active {
       border: 2px solid rgba(218, 233, 251, 0.25);

@@ -32,5 +32,9 @@
 
     @include text-list-small;
     color: $accient-400;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

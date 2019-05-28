@@ -2,15 +2,22 @@
   @include indent-reset;
   @include menu-small;
   text-transform: uppercase;
-  text-align: right;
   color: $accient-400;
-  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+  &__wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
   &--accient {
     color: $white;
+    width: 120px;
   }
   &__thumb {
-    position: absolute;
-    top: -6px;
-    right: -30px;
   }
 }
