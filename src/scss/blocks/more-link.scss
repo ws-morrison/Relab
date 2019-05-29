@@ -19,5 +19,16 @@
     width: 120px;
   }
   &__thumb {
+    fill: $accient-400;
+    &:hover {
+      fill: $accient-500;
+    }
+    &--white {
+      fill: $white;
+    }
+  }
+  fill: $accient-400;
+  &:hover {
+    fill: $accient-500;
   }
 }

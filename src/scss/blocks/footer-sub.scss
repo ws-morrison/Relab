@@ -41,6 +41,9 @@
     //   border: 2px solid rgba(218, 233, 251, 0.25);
     //   border-radius: 6px;
     // }
+    &:hover {
+      color: $accient-200;
+    }
 
     @media (max-width: $tableWidth) {
       margin-bottom: 16px;

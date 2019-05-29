@@ -8,16 +8,21 @@
   align-items: baseline;
   flex-wrap: wrap;
 
-  @media (max-width: $smDesktopWidth) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    // margin-bottom: 16px;
-    width: unset;
-  }
   &__thumb {
     position: relative;
     left: -8px;
+    fill: transparent;
+    stroke: $accient-400;
+    &:hover {
+      stroke: $white;
+    }
+    @media (max-width: $smDesktopWidth) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // margin-bottom: 16px;
+      width: unset;
+    }
     @media (max-width: $smDesktopWidth) {
       display: none;
     }
@@ -69,7 +74,6 @@
   &__link {
     padding-top: 7px;
     padding-bottom: 7px;
-
     &--active {
       border: 2px solid rgba(218, 233, 251, 0.25);
       border-radius: 6px;
@@ -78,6 +82,13 @@
     //   border: 2px solid rgba(218, 233, 251, 0.25);
     //   border-radius: 6px;
     // }
+    &__thumb {
+      fill: transparent;
+      stroke: $accient-400;
+      &:hover {
+        fill: $white;
+      }
+    }
     @media (max-width: $smDesktopWidth) {
       &:nth-child(even) {
         border-right: 1px solid $white;
