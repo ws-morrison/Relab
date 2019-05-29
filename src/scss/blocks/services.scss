@@ -1,29 +1,54 @@
 .services {
   margin-bottom: 24px;
+
   &__list {
     line-height: 24px;
     margin-bottom: 29px;
     padding-left: 15px;
   }
+
   &__item {
+    display: flex;
+    flex-direction: column;
     text-transform: uppercase;
+    // padding-left: 15px;
 
     @media (max-width: $smDesktopWidth) {
       display: none;
     }
   }
-  &__item-title {
-    @include menu-small;
+
+  &__sublist {
+    margin-top: 0;
+
+  }
+
+  &__sublist-item {
     color: $ui-500;
   }
-  &__list-item {
+
+  &__item-title {
+    // color: $ui-500;
+    @include menu-small;
+    margin-bottom: 8px;
+  }
+
+  // &__list-item {
+  //   // @include menu-small;
+  //   // color: $ui-400;
+  // }
+
+  &__list-link {
     @include menu-small;
     color: $ui-400;
+    margin-bottom: 4px;
   }
+
   &__add-item {
     display: flex;
     flex-direction: column;
   }
+
   &__item-link {
     padding-top: 21px;
     padding-bottom: 21px;
