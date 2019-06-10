@@ -1,0 +1,78 @@
+.table-section {
+    padding-top: 40px;
+    padding-bottom: 70px;
+    // overflow: auto;
+    // display: table;
+    overflow-x: auto;
+
+    // display: block;
+    // margin: 0 auto;
+    // width: 882px;
+}
+
+.table {
+    @include text-body;
+    color: $ui-400;
+    // border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 1120px;
+    // padding: 0;
+    // width: 100%;
+    display: table;
+    border: none;
+    border-radius: 6px;
+}
+
+.table__text {
+    max-width: 600px;
+    width: 100%;
+
+    &--bold {
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: $ui-500;
+    }
+}
+
+.table__td {
+    vertical-align: text-top;
+    padding-left: 24px;
+}
+
+.table__th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    background-color: $ui-300;
+    font-weight: 400;
+    color: $ui-200;
+    text-align: left;
+}
+
+.table__tr {
+    border-bottom: 1px solid $ui-200;
+}
+
+.table__list {
+    padding: 0;
+    margin: 0;
+    padding-left: 12px;
+
+    &--big {
+        @include list-reset;
+        font-size: 16px;
+        display: block;
+        width: 9vw;
+    }
+}
+
+.table__list-item {
+    margin-bottom: 8px;
+}

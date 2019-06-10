@@ -35,7 +35,7 @@
     @include menu-small;
 
     text-transform: uppercase;
-    color: #fff;
+    color: $white;
 
     display: flex;
     flex-direction: row;
@@ -109,7 +109,7 @@
 
     @media (max-width: $smDesktopWidth) {
       &:nth-child(even) {
-        border-right: 1px solid $accient-100;
+        border-right: 1px solid $accient-300;
       }
     }
   }
@@ -141,7 +141,7 @@
       border-right: none;
 
       &:nth-child(odd) {
-        border-right: 1px solid $accient-100;
+        border-right: 1px solid $accient-300;
       }
     }
   }

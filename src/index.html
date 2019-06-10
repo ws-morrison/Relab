@@ -13,20 +13,18 @@
 
   <header class="page-header">
     <div class="page-header__wrapper">
-      <div class="container">
-        <div class="menu-mobile">
-          <div class="burger">
-            <div class="burger-item"></div>
-            <div class="burger-item burger-item--middle"></div>
-            <div class="burger-item"></div>
-          </div>
+      <div class="menu-mobile">
+        <div class="burger">
+          <div class="burger-item"></div>
+          <div class="burger-item burger-item--middle"></div>
+          <div class="burger-item"></div>
+        </div>
 
-          <div class="search">
-            <img src="./img/icons/search.svg" alt="">
-          </div>
+        <div class="search">
+          <img src="./img/icons/search.svg" alt="">
         </div>
       </div>
-      <div class="page-header__row-1">
+      <div class="page-header__row-1 firstMenuJs">
         <div class="page-header__col-1">
           <div class="sub-menu">
             <a href="" class="sub-menu__link sub-menu__link--hidden sub-menu__link--accient">
@@ -52,30 +50,99 @@
             <a href="" class="sub-menu__link">About relab</a>
           </div>
         </div>
+        <!-- Search form -->
+        <div class="search-form__wrapper">
+          <form class="search-form" method="post" action="http://www.relabsoft.com/">
+            <div class="hiddenFields">
+              <input type="hidden" name="ACT" value="19">
+              <input type="hidden" name="XID" value="8b6347451721db66f5cae1dc2710e970">
+              <input type="hidden" name="RP" value="search/results">
+              <input type="hidden" name="NRP" value="">
+              <input type="hidden" name="RES" value="">
+              <input type="hidden" name="status" value="">
+              <input type="hidden" name="weblog" value="static">
+              <input type="hidden" name="search_in" value="everywhere">
+              <input type="hidden" name="where" value="all">
+              <input type="hidden" name="site_id" value="1">
+            </div>
+
+    
+            <div class="search-form__wrapper-label">
+              <label for="" class="search-form__label">
+                <input class="search-form__input" type="text" name="keywords" id="keywords" value="" size="12"
+                  maxlength="100">
+                <svg class="search-form__thumb">
+                  <use xlink:href='img/icons/sprite.svg#search-icon'></use>
+                </svg>
+              </label>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </header>
 
-  <div class="header-menu">
+  <div class="header-menu secondMenuJs">
     <div class="nav__wrapper">
       <div class="header-menu__logo-wrapper">
         <img class="header-menu__logo" src="./img/logo.png" alt="" width="106" height="59">
       </div>
-      <div class="nav__list">
-        <a href="#" class="nav__list-link">Home</a>
-        <a href="" class="nav__list-link">Products</a>
-        <a href="" class="nav__list-link">Services</a>
-        <a href="" class="nav__list-link">Support</a>
-        <a href="" class="nav__list-link">Customers</a>
-        <a href="" class="nav__list-link">Partners</a>
-      </div>
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <a href="#" class="nav__list-link">Home</a>
+        </li>
+        <li class="nav__list-item">
+          <span class="nav__list-link">Products
+            <svg class="nav__item-thumb" width="22" height="22">
+              <use xlink:href='img/icons/sprite.svg#plus-icon'></use>
+            </svg>
+          </span>
+          <ul class="nav__sublist">
+            <li class="nav__sublist-item">
+              <a href="" class="nav__sublist-link">Sub Item</a>
+            </li>
+            <li class="nav__sublist-item">
+              <a href="" class="nav__sublist-link">Sub Item</a>
+            </li>
+            <li class="nav__sublist-item">
+              <a href="" class="nav__sublist-link">Sub Item</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav__list-item">
+          <span class="nav__list-link">Services
+            <svg class="nav__item-thumb" width="22" height="22">
+              <use xlink:href='img/icons/sprite.svg#plus-icon'></use>
+            </svg>
+          </span>
+          <ul class="nav__sublist">
+            <li class="nav__sublist-item">
+              <a href="" class="nav__sublist-link">Sub Item</a>
+            </li>
+            <li class="nav__sublist-item">
+              <a href="" class="nav__sublist-link">Sub Item</a>
+            </li>
+            <li class="nav__sublist-item">
+              <a href="" class="nav__sublist-link">Sub Item</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav__list-item">
+          <a href="" class="nav__list-link">Support</a>
+        </li>
+        <li class="nav__list-item">
+          <a href="" class="nav__list-link">Customers</a>
+        </li>
+        <li class="nav__list-item">
+          <a href="" class="nav__list-link">Partners</a>
+        </li>
+      </ul>
       <div class="login">
         <a href="" class="login__btn">Log in</a>
         <a href="" class="login__btn login__btn--accient">Sign up</a>
       </div>
     </div>
   </div>
-
 
   <div class="page-title"
     style="background-image: url('./img/background.jpg');background-repeat: no-repeat;background-size: cover;">
@@ -95,6 +162,8 @@
 
         <div class="main-content__wrapper">
           <div class="main-content__col-1">
+
+
             <h3 class="main-content__title">INNOVATIVE, COST-EFFECTIVE, AND INTEROPERABLE
               — INTELLIGENT INDUSTRIAL AUTOMATION SOFTWARE</h3>
             <p class="main-content__text">

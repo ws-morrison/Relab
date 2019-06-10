@@ -1,0 +1,135 @@
+.registration {
+    &__title {
+        @include indent-reset;
+        @include h3;
+        color: $ui-500;
+        margin-bottom: 18px;
+        text-transform: uppercase;
+        // text-decoration-line: underline;
+        // text-decoration-style: dashed;
+        position: relative;
+
+        @media (max-width: $smDesktopWidth) {
+            @include h3-mobile;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            width: 3px;
+            height: 1px;
+            background-color: #354a64;
+        }
+    }
+}
+
+.registration-form {
+    &__title {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 24px;
+        color: $ui-300;
+        text-transform: uppercase;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    &__fieldset {
+        border: 1px solid $accient-200;
+        border-radius: 6px;
+
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+        margin-bottom: 24px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        // margin: 0 auto;
+        // width: 100%;
+        align-content: flex-end;
+    }
+
+    &__label-wrapper {
+        margin-bottom: 16px;
+    }
+
+    &__label {
+        font-size: 16px;
+        text-align: right;
+        color: #EB5757;
+        // display: flex;
+        // align-items: center;
+        // margin-bottom: 16px;
+    }
+
+    &__input {
+        border: 1px solid $ui-200;
+        border-radius: 6px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 12px;
+        padding-right: 8px;
+        width: 216px;
+        color: $ui-500;
+        font-size: 14px;
+        margin-left: 16px;
+    }
+
+    &__check {
+        margin-left: 40px;
+    }
+}
+
+
+// Чекбоксы
+.checkbox {
+    position: relative;
+}
+
+.checkbox__input {
+    position: absolute;
+    appearance: none;
+}
+
+.checkbox-label {
+    font-size: 16px;
+    color: $ui-400;
+}
+
+.checkbox__box {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background-color: #fff;
+    left: -22px;
+    top: 2px;
+    border: 1px solid $ui-200;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+// Checked
+.checkbox__input:checked+.checkbox__box {
+    // Временно
+    // width: 13px;
+    // height: 13px;
+    background-color: $ui-400;
+    // border: none;
+    // border-radius: 25px;
+
+    background-image: url("/img/icons/shape.svg");
+    background-repeat: no-repeat;
+    background-position-x: 1px;
+    background-position-y: 1px;
+    background-size: 11px 11px;
+}

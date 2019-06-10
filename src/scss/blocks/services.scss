@@ -33,10 +33,9 @@
     margin-bottom: 8px;
   }
 
-  // &__list-item {
-  //   // @include menu-small;
-  //   // color: $ui-400;
-  // }
+  &__item-thumb{
+    fill: $accient-400;
+  }
 
   &__list-link {
     @include menu-small;

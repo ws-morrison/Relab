@@ -37,31 +37,10 @@
   content: "";
   position: absolute;
 
-  width: 18px;
+  width: 24px;
   height: 0.1em;
-  background: rgb(58, 185, 195);
+  background: #044a9f;
   margin-bottom: 4px;
-
-  /*   autoprefixes */
   transform: rotate(90deg);
 }
 
-/* MENU */
-
-.menu {
-  width: 0;
-  height: 420px;
-  background-color: #3ab9c3;
-}
-
-.opened-menu {
-  width: 580px;
-  transition: 0.1s linear;
-}
-
-// jq
-// Burger animation
-// $(".burger").click(function() {
-//     $(this).toggleClass("open");
-//     $('.menu').toggleClass("opened-menu");
-// });

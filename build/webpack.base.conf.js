@@ -2,7 +2,7 @@ const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyWebpack = require('copy-webpack-plugin')
 const HtmlWebpack = require('html-webpack-plugin')
-
+const Jquery = require('jquery')
 const PATHS = {
     src: path.join(__dirname, '../src'),
     dist: path.join(__dirname, '../docs'),
@@ -98,9 +98,18 @@ module.exports = {
             template: `${PATHS.src}/2.html`,
             filename: './2.html'
         }),
+        new HtmlWebpack({
+            hash: false,
+            template: `${PATHS.src}/3.html`,
+            filename: './3.html'
+        }),
         new CopyWebpack([
             { from: `${PATHS.src}/img`, to: `${PATHS.assets}img` },
             { from: `${PATHS.src}/static`, to: '' }
-        ])
+        ]),
+        new Jquery({
+            $: "jquery",
+            jQuery: "jquery"
+        }),
     ]
 }
