@@ -107,9 +107,9 @@ module.exports = {
             { from: `${PATHS.src}/img`, to: `${PATHS.assets}img` },
             { from: `${PATHS.src}/static`, to: '' }
         ]),
-        new Jquery({
-            $: "jquery",
-            jQuery: "jquery"
-        }),
+        // new Jquery({
+        //     $: "jquery",
+        //     jQuery: "jquery"
+        // }),
     ]
 }
